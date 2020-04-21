@@ -1,3 +1,3 @@
 # Games
 
-Fun python scripts
+Python scripts
