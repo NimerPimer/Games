@@ -5,6 +5,7 @@ from test_board import *
 def solve(board):
     if board.board_is_full():
         board.print_board()
+        print("数独 - Sudoku Solver - 数独")
         return
     for i in range(BOARD_SIZE):
         for j in range(BOARD_SIZE):
@@ -21,7 +22,6 @@ def main():
     print("数独 - Sudoku Solver - 数独")
     board = Board(test_board_1)
     solve(board)
-    print("数独 - Sudoku Solver - 数独")
 
 
 if __name__ == "__main__":
