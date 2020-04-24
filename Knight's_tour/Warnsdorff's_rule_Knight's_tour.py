@@ -1,5 +1,6 @@
 """
 This is an improvement to the knight's tour algorithm.
+It's a  heuristic so it won't be able to find every possible solution but it will find some solutions.
 It uses Warnsdorff's rule.
 
 Every iteration we move to the place that has the minimum amount of possible moves (the next moves).
