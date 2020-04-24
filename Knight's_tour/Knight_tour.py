@@ -34,13 +34,13 @@ def knight(solution):
         rnd_move = random.choice(moves)
         i += Knight_Moves[rnd_move][0]
         j += Knight_Moves[rnd_move][1]
-        if (i, j) not in solution and in_board(i, j):
-            solution.append((i, j))
-            knight(solution)
-            solution.pop()
-            i -= Knight_Moves[rnd_move][0]
-            j -= Knight_Moves[rnd_move][1]
-            moves.remove(rnd_move)
+        solution.append((i, j))
+        knight(solution)
+        solution.pop()
+        i -= Knight_Moves[rnd_move][0]
+        j -= Knight_Moves[rnd_move][1]
+        moves.remove(rnd_move)
+        
     return
 
 
