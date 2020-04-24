@@ -3,7 +3,7 @@ This is an improvement to the knight's tour algorithm.
 It uses Warnsdorff's rule.
 
 Every iteration we move to the place that has the minimum amount of possible moves (the next moves).
-If 2 places (can be more then 2) have the same amount of moves after them, we'll chose a random one (from those 2).
+If 2 places (can be more then 2) have the same amount of moves after them, we'll chose a random one (from the 2).
 
 It works in a reasonable amount of time for 31x31 boards (in my machine).
 """
