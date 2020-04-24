@@ -35,15 +35,15 @@ def knight(solution):
 
     while len(moves) > 0:
         # Knight moves
-        rnd_move = correct_move(i, j, moves, solution)
-        i += Knight_Moves[rnd_move][0]
-        j += Knight_Moves[rnd_move][1]
+        next_move = correct_move(i, j, moves, solution)
+        i += Knight_Moves[next_move][0]
+        j += Knight_Moves[next_move][1]
         solution.append((i, j))
         knight(solution)
         solution.pop()
-        i -= Knight_Moves[rnd_move][0]
-        j -= Knight_Moves[rnd_move][1]
-        moves.remove(rnd_move)
+        i -= Knight_Moves[next_move][0]
+        j -= Knight_Moves[next_move][1]
+        moves.remove(next_move)
 
     return
 
